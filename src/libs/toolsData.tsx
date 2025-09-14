@@ -1,8 +1,8 @@
-import { Image, Video, Palette, Camera, Wand2, Mic, Move, Zap } from "lucide-react";
-import { ReactElement } from "react";
+import { Image as ImageIcon, Video, Palette, Camera, Wand2, Mic, Move, Zap } from "lucide-react";
+import { JSX } from "react";
 
-type GenerateTool = {
-  icon: ReactElement;
+export type GenerateTool = {
+  icon: JSX.Element;
   title: string;
   description: string;
   tag: string;
@@ -12,7 +12,7 @@ type GenerateTool = {
 
 export const generateTools: GenerateTool[] = [
         {
-            icon: <Image className="w-6 h-6" />,
+            icon: <ImageIcon className="w-6 h-6" />,
             title: "Image",
             description: "Generate realistic and artistic images with FLUX.1 [dev] model",
             tag: "Free",

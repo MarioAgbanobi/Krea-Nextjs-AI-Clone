@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
+import { GenerateTool } from "@/libs/toolsData";
 
-export default function ToolCard({ tool, isDarkMode }: { tool: any; isDarkMode: boolean }) {
+export default function ToolCard({ tool, isDarkMode }: { tool: GenerateTool; isDarkMode: boolean }) {
   return (
     <div className={`pt-4 rounded-lg transition-all hover:scale-100 cursor-pointer ${isDarkMode ? "border-gray-700" : "border-gray-200"} group`}>
       <div className="flex items-start justify-between gap-4">
