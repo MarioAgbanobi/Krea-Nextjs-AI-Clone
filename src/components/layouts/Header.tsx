@@ -1,5 +1,5 @@
 "use client";
-import { ChevronDown, Home, Image, Video, PenTool, Folder, Bell, Sun, Moon, Headset } from "lucide-react";
+import { ChevronDown, Home, Image as ImageIcon, Video, PenTool, Folder, Bell, Sun, Moon, Headset } from "lucide-react";
 
 export default function Header({ isDarkMode, toggleTheme }: { isDarkMode: boolean; toggleTheme: () => void }) {
     return (
@@ -34,7 +34,7 @@ export default function Header({ isDarkMode, toggleTheme }: { isDarkMode: boolea
                         className={`p-2 rounded-full transition ${isDarkMode ? "hover:bg-gray-700" : "hover:bg-white"
                             }`}
                     >
-                        <Image
+                        <ImageIcon
                             className={`w-4 h-4 ${isDarkMode ? "text-gray-200" : "text-gray-700"
                                 }`}
                         />
@@ -76,7 +76,7 @@ export default function Header({ isDarkMode, toggleTheme }: { isDarkMode: boolea
                             : "text-gray-700 bg-gray-100"
                             }`}
                     >
-                        <Image className="w-4 h-4" />
+                        <ImageIcon className="w-4 h-4" />
                         <span>Gallery</span>
                     </button>
 
